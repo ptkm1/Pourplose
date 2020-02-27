@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+
+*{margin: 0;padding: 0;box-sizing: border-box; font-family: 'product Sans';}
+#cbc{
+  background-image: linear-gradient(to left, #8a2be2,#d400ff );
+  height: 350px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+  #cbc #logo img{
+      width: 150px;
+  }
+  #logo{
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      color: rgb(219, 219, 219);
+  }
+.menu{
+  background-color: #6b6a6a;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  font-weight: bold;
+}
+.menu ul{
+  margin-left: 25px;
+}
+.menu ul li{
+  display: inline-flex;
+  margin: 5px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+.menu ul li a:hover{
+  color: violet;
+}
+.circulo{
+  background: white;
+  width: 37px;
+  height: 37px;
+  border-radius: 100%;
+  border: #8a2be2 solid 2px;
+  position: relative;
+}
+.circulo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+
+#right{
+  width: 250px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 25px;
+  color: white;
+}
+#infor{
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#side-menu{
+  margin: 15px;
+  display: none;
+}
+#side-menu a{
+  text-decoration: none;
+  color: white;
+}
+#miolo{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:space-around;
+  align-items: center;
+}
+#card1{
+  width: 90%;
+  height: 220px;
+  background: rgb(240, 240, 240);
+  box-shadow: 11px 10px 5px -8px rgba(0,0,0,0.21);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#card1-mobile{
+  display: none;
+}
+#fotoCard1-mobile{
+  display: none;
+}
+
+#textCard1-mobile{
+  display: none;
+}
+
+.title{
+  margin-bottom: 55px;
+  color: #8a2be2;
+}
+
+#fotoCard1{
+  background-image: linear-gradient(to right, violet,#8a2be2 );
+  width: 25%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+#textCard1{
+  width: 75%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  color: #8a2be2;
+}
+  #textCard1 h2,p{
+  margin-left: 10px;
+  color: rgb(92, 91, 91);
+  }
+  #textCard1 button{
+      width:15%;
+      border: solid #8a2be2;
+      color: #8a2be2;
+      border-radius: 10px;
+      height: 30px;
+      margin-top:50px;
+      cursor: pointer;
+  }
+  #textCard1 button:hover{
+      background: #8a2be2;
+      color: white;
+  }
+  #textCard1 button:focus{
+      outline: none;
+  }
+
+  #logOut1{
+  width: 60px;
+  height: 25px;
+  background: white;
+  border: solid white 1px;
+  border-radius: 4px;
+  margin: 10px;
+  color: #d400ff;
+  font-size: 14px;
+  cursor: pointer;
+  }
+
+  #logOut1:hover{
+    background: #d400ff;
+    color: white;
+    border: none;
+  }
+  #logOut1:focus{
+    outline: none;
+  }
+
+@media screen and (max-width:414px){
+  .menu ul{
+      display: none;
+  }
+  #side-menu{
+      display: flex;
+  }
+  #card1{
+      display: none;
+      width: 97%;
+      height: 160px;
+  }
+
+  #card1-mobile{
+      width: 97%;
+      height: 190px;
+      background-image: linear-gradient(to right, #4b4b4b 70%, #4b4b4b);
+      box-shadow: 11px 10px 5px -8px rgba(0,0,0,0.21);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+  }
+  #fotoCard1-mobile{
+      display: flex;
+      width: 30%;
+      height: 100%;
+      border-radius: 10px 0px 0px 10px;
+      background-image: linear-gradient(to right, violet,#8a2be2 );
+  }
+  #textCard2{
+      width: 70%;
+      height: 95%;
+      color: white;
+      text-align: justify;
+      letter-spacing: -0.5px;
+      display: flex;
+      flex-flow: column wrap;
+      padding: 5px;
+  }
+  #textCard2 h2,p{
+      font-size: medium;
+      color: white;
+  }
+  #right{
+    margin-right: 50px;
+  }
+  .circulo{
+    margin-left: -20px;
+  }
+
+}
+
+
+@media screen and (max-width: 850px){
+  #textCard1 button{
+      width: 20%;
+      height: 100%;
+      margin-top: 10px;
+  }
+}

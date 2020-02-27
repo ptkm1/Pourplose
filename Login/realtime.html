@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="componentes/estilos/realtime.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    
+    <div id="loginAndCad">
+
+
+        <h3 id="display">Database</h3>
+      <input type="text" placeholder="nome" id="nome">
+      <input type="text" placeholder="Digite sua idade" id="idade">
+      <button id="add">adicionar</button>
+      <button id="itens">Ver Itens</button>
+
+      
+    </div>
+
+    <div id="its">
+      <button id="closeModal">Fechar</button>
+      <div id="table">
+        <ul id="usuarios">
+      </ul>
+      </div>
+      
+
+
+    </div>
+
+    
+
+  </div>
+
+
+    <script src="node_modules/firebase/firebase.js"></script>
+    <script src="app.js"></script>
+    <script src="componentes/realtime.js"></script>
+
+</body>
+</html>

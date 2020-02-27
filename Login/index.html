@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="componentes/estilos/login.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    
+    <div id="loginAndCad">
+      <div id="logoMini">
+        <img src="componentes/logo.png">
+      </div>
+      <h3 id="display">Não Autenticado </h3>
+      <a href="#" id="logOut">Deslog</a>
+      <input type="email" placeholder="Email" id="emailInput">
+      <input type="password" placeholder="Digite sua senha" id="passInput">
+      <button id="login">Login</button>
+      <button id="cadastro">Cadastro</button>
+
+      <div id="socialMedia">
+        <button id="loginGoog">Google</button>
+        <button id="loginGit">GitHub</button>
+      </div>
+
+
+    </div>
+  </div>
+
+    <script src="node_modules/firebase/firebase.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

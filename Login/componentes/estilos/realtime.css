@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+
+*{margin: 0;padding: 0;box-sizing: border-box; font-family: 'product Sans';}
+
+#container{
+  background-color: blueviolet;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginAndCad{
+  background-color: rgb(150, 83, 212);
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+}
+form{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#loginAndCad input{
+  width:50%;
+  height: 30px;
+  background: none;
+  border: none;
+  border-bottom: solid rgb(164, 133, 192);
+  border-radius: 5%;
+  margin: 10px;
+  color: white;
+}
+#loginAndCad input:focus{
+  border-bottom: solid white;
+  transition: 0.7s;
+  outline: none;
+}
+
+#loginAndCad button{
+  width: 40%;
+  height: 30px;
+  background: white;
+  border: solid white 1px;
+  border-radius: 5px;
+  margin: 10px;
+  color: blueviolet;
+  font-size: 14px;
+  cursor: pointer;
+}
+#loginAndCad button:hover{
+  background: blueviolet;
+  color: white;
+  border: none;
+}
+
+#loginAndCad button:focus{
+
+  outline: none;
+}
+
+#loginAndCad h3{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#its{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.678);
+  position: fixed;
+  z-index: -5;
+ 
+}
+#its button{
+  width: 100px;
+  background: purple;
+  position: absolute;
+}
+
+#table{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#usuarios{
+  background-color: cadetblue;
+}
+
